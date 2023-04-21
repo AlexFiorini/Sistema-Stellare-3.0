@@ -1,0 +1,31 @@
+#menu {
+    -fx-width: 100%;
+    -fx-height: 100%;
+    -fx-position: relative;
+    -fx-overflow: hidden;
+    -fx-background: #000;
+    -fx-cursor: pointer;
+    -fx-background-image: url("https://lh3.googleusercontent.com/u/2/drive-viewer/AFGJ81oyg6fKwGLiyzjbboFDynqeyyLxubc9IXkxl6f2_HrP_VIzdxNsH4UOb-1bV8xShl1Gso0vlbRx6WS_v6VZZDCpruiWQQ");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 95% 95%;
+    -fx-background-position: center;
+}
+
+#continua {
+    -fx-Animation: pulsate 2s ease-out;
+    -fx-Animation-iteration-count: infinite;
+    -fx-opacity: 0.5;
+    -fx-font-size: 50px;
+}
+
+@keyframes pulsate {
+    0% {
+        -fx-opacity: 0.5;
+    }
+    50% {
+        -fx-opacity: 1.0;
+    }
+    100% {
+        -fx-opacity: 0.5;
+    }
+}
