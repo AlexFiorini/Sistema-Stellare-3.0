@@ -3,9 +3,11 @@ package com.sistemasolare;
 import javafx.fxml.FXML;
 import javafx.animation.ScaleTransition;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
 public class HelloController {
+    public AnchorPane menu;
     @FXML
     Label continua;
     public ScaleTransition scaleTransition;
