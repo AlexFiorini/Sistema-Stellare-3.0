@@ -10,6 +10,7 @@ import java.net.MalformedURLException;
 
 public class Main extends Application {
     int pressed = 0;
+    int selected = 0;
     Selezione_galassie s;
 
     @Override
@@ -33,14 +34,13 @@ public class Main extends Application {
             if(event.getCode().toString().equals("ESCAPE"))
                 stage.close();
             else {
-                switch(pressed){
-                    case 0:
+                switch (pressed) {
+                    case 0 -> {
                         Introduzione i = new Introduzione(stage, (Label) stage.getScene().getRoot().lookup("#continua"));
                         i.start();
                         pressed++;
-                        break;
-
-                    case 1:
+                    }
+                    case 1 -> {
                         try {
                             s = new Selezione_galassie(stage, (AnchorPane) stage.getScene().getRoot().lookup("#menu"));
                         } catch (MalformedURLException e) {
@@ -48,24 +48,19 @@ public class Main extends Application {
                         }
                         s.start();
                         pressed++;
-                        break;
-
-                    case 2:
-                        if(event.getCode().toString().equals("RIGHT")) {
+                    }
+                    case 2 -> {
+                        if (event.getCode().toString().equals("RIGHT")) {
                             s.right();
                         } else if (event.getCode().toString().equals("LEFT")) {
                             s.left();
                         } else if (event.getCode().toString().equals("ENTER")) {
-                            int selected = s.enter();
+                            selected = s.enter();
                             pressed++;
                         }
-                        break;
-
-                    case 3:
-                        break;
-
-                    default:
-                        break;
+                    }
+                    default -> {
+                    }
                 }
 
             }
