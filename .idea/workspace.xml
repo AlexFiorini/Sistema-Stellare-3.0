@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Creato repo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Introduzione.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/schermate/Presentazione-octocat.png" afterDir="false" />
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunta seconda schermata, Selezione_galassie, modificata schermata iniziale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,12 +96,20 @@
       <option name="project" value="LOCAL" />
       <updated>1682074165438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Aggiunta seconda schermata, Selezione_galassie, modificata schermata iniziale">
+      <created>1682678490113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682678490113</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creato repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creato repo" />
+    <MESSAGE value="Aggiunta seconda schermata, Selezione_galassie, modificata schermata iniziale" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta seconda schermata, Selezione_galassie, modificata schermata iniziale" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
