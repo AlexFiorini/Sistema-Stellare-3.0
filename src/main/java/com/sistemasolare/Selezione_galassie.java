@@ -64,6 +64,7 @@ public class Selezione_galassie {
     }
 
     public int enter() {
+        root.getChildren().remove(rectangle);
         return selected;
     }
 }

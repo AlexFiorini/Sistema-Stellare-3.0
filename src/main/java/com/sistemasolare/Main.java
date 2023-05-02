@@ -5,6 +5,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.awt.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -36,7 +38,7 @@ public class Main extends Application {
             else {
                 switch (pressed) {
                     case 0 -> {
-                        Introduzione i = new Introduzione(stage, (Label) stage.getScene().getRoot().lookup("#continua"));
+                        Introduzione i = new Introduzione(stage, (Label) stage.getScene().getRoot().lookup("#continua"), (AnchorPane) stage.getScene().getRoot().lookup("#menu"));
                         i.start();
                         pressed++;
                     }
@@ -59,6 +61,10 @@ public class Main extends Application {
                             pressed++;
                         }
                     }
+                    case 3 -> {
+                        Lancio l = new Lancio(stage, (AnchorPane) stage.getScene().getRoot().lookup("#menu"));
+                        l.Takeoff();
+                    }
                     default -> {
                     }
                 }
@@ -70,6 +76,11 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        /*Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        if(screenSize.getHeight() != 1080 || screenSize.getWidth() != 1920) {
+            System.out.println("La risoluzione dello schermo non è 1920x1080, il programma non si avvierà");
+            System.exit(0);
+        }*/
         launch();
     }
 }
