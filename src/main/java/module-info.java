@@ -9,7 +9,6 @@ module com.sistemasolare {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
 
     exports com.sistemasolare;
     opens com.sistemasolare to javafx.fxml;

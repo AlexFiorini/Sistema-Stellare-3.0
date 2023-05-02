@@ -81,10 +81,10 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        if(screenSize.getHeight() != 1080 || screenSize.getWidth() != 1920) {
+        /*if(screenSize.getHeight() != 1080 || screenSize.getWidth() != 1920) {
             System.out.println("La risoluzione dello schermo non è 1920x1080, il programma non si avvierà");
             System.exit(0);
-        }
+        }*/
         launch();
     }
 }
