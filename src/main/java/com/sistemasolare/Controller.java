@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
-public class HelloController {
+public class Controller {
     public AnchorPane menu;
     @FXML
     Label continua;

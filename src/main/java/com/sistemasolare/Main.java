@@ -1,12 +1,11 @@
 package com.sistemasolare;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
-import java.awt.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -17,7 +16,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Schermata.fxml"));
         Scene scene;
         try {
             scene = new Scene(fxmlLoader.load(), 1920, 1080);
@@ -80,11 +79,6 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        /*if(screenSize.getHeight() != 1080 || screenSize.getWidth() != 1920) {
-            System.out.println("La risoluzione dello schermo non è 1920x1080, il programma non si avvierà");
-            System.exit(0);
-        }*/
         launch();
     }
 }
