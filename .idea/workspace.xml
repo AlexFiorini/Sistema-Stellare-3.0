@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunto AnchorPane a HelloController.java">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="URL abbreviati">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Introduzione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Introduzione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Alex/Utenti/Alex/Documenti/Programmi/Java/Sistema-solare-3.0/src/main/java/com/sistemasolare&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "D:/Alex/Utenti/Alex/Documenti/Programmi/Java/Sistema-solare-3.0/src/main/java/com/sistemasolare",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Alex\Utenti\Alex\Documenti\Programmi\Java\Sistema-solare-3.0\src\main\resources\com\sistemasolare\schermate" />
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683035182341</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="URL abbreviati">
+      <created>1683219499665</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683219499666</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +184,8 @@
     <MESSAGE value="Migliorato switch" />
     <MESSAGE value="Aggiunto test rotazione, aggiunto lancio razzo (temp)" />
     <MESSAGE value="Aggiunto controllo dimensione schermo, aggiunte classi oggetti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto controllo dimensione schermo, aggiunte classi oggetti" />
+    <MESSAGE value="URL abbreviati" />
+    <option name="LAST_COMMIT_MESSAGE" value="URL abbreviati" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
