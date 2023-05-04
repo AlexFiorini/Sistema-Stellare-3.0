@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sistema-solare</groupId>
-    <artifactId>Sistemasolare30</artifactId>
+    <artifactId>Sistema_solare-3.0</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Sistema-solare-3.0</name>
 
@@ -148,7 +148,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.sistemasolare.sistemasolare30/com.sistemasolare.sistemasolare30.HelloApplication
+                                com.sistemasolare/com.sistemasolare.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
