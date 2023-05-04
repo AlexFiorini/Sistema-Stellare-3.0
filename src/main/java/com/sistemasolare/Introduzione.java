@@ -16,7 +16,8 @@ public class Introduzione {
     }
 
     public void start() {
-        stage.getScene().getRoot().setStyle("-fx-background-image: url('https://lh3.googleusercontent.com/u/2/drive-viewer/AFGJ81rVvJOiD-jU6Z7mhQ8ZQrSwtRj22DL8YieZCgqvMbyPbHBgxsd7Srh7Kln7ciVKOCGyP0SOEJt2WBLRH_393AfWNU2g7Q');");
+        String foto = "https://shorturl.at/asFGY";
+        stage.getScene().getRoot().setStyle("-fx-background-image: url('" + foto + "');");
         root.getChildren().remove(label);
     }
 }
