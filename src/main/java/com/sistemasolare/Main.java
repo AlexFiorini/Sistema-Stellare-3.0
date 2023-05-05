@@ -72,9 +72,15 @@ public class Main extends Application {
                     }
                     case 4 -> {
                         stage.close();
-                        Tabella t = new Tabella();
+                        for(int i = 0; i < selected; i++) {
+                            Tabella t = new Tabella();
+                        }
                         pressed++;
                     }
+                    case 5 -> {
+                        Sistema_Solare ss = new Sistema_Solare();
+                    }
+
                     default -> {
                     }
                 }

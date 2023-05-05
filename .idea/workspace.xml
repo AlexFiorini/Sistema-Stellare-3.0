@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunta Tabella.java, ridotto link in style.css, aggiunti parametri in Star.java, Planet.java, Moon.java, modificato Lancio.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Lancio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Lancio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Selezione_galassie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/GravityObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/GravityObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Star.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/sistemasolare/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683221022070</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Aggiunta Tabella.java, ridotto link in style.css, aggiunti parametri in Star.java, Planet.java, Moon.java, modificato Lancio.java">
+      <created>1683281176626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683281176626</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
