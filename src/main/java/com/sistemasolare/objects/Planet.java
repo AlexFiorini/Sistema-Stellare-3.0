@@ -14,4 +14,28 @@ public class Planet {
         this.distance = distance;
         this.moons = moons;
     }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public double getMass() {
+        return mass;
+    }
+
+    public Moon[] getMoons() {
+        return moons;
+    }
+
+    public String getName() {
+        return Name;
+    }
 }

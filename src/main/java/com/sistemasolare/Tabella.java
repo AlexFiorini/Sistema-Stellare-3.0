@@ -7,33 +7,42 @@ import javax.swing.*;
 
 public class Tabella extends Frame {
 
-    public Tabella() {
+    JPanel p1 = new JPanel(new GridLayout(11, 7));
+    JPanel p2 = new JPanel(new FlowLayout());
+    JButton b = new JButton("Continua");
 
+    public Tabella() {
         setTitle("Tabella Pianeti");
         setExtendedState(Frame.MAXIMIZED_BOTH);
-        setLayout(new GridLayout(11, 7));
-        setBackground(Color.BLACK);
-        setForeground(Color.GREEN);
-        add(new Label("Pianeta"));
-        add(new Label("Nome"));
-        add(new Label("Posizione X"));
-        add(new Label("Posizione Y"));
-        add(new Label("Grado di Inclinazione"));
-        add(new Label("Distanza dall'oggetto"));
-        add(new Label("Lune"));
+        setUndecorated(true);
+        setLayout(new BorderLayout());
+        add(p1,BorderLayout.CENTER);
+        add(p2,BorderLayout.SOUTH);
+        p2.setBackground(Color.BLACK);
+        p2.add(b);
+        p1.setBackground(Color.BLACK);
+        p1.setForeground(Color.GREEN);
+        p1.add(new Label("Pianeta"));
+        p1.add(new Label("Nome"));
+        p1.add(new Label("Posizione X"));
+        p1.add(new Label("Posizione Y"));
+        p1.add(new Label("Grado di Inclinazione"));
+        p1.add(new Label("Distanza dall'oggetto"));
+        p1.add(new Label("Lune"));
+        b.addActionListener(e -> dispose());
 
         for(int i = 1; i <= 10; i++) {
-            add(new Label("Pianeta " + i));
+            p1.add(new Label("Pianeta " + i));
             TextField nomeField = new TextField();
-            add(nomeField);
+            p1.add(nomeField);
             TextField posXField = new TextField();
-            add(posXField);
+            p1.add(posXField);
             TextField posYField = new TextField();
-            add(posYField);
+            p1.add(posYField);
             TextField inclinazioneField = new TextField();
-            add(inclinazioneField);
+            p1.add(inclinazioneField);
             TextField distanzaField = new TextField();
-            add(distanzaField);
+            p1.add(distanzaField);
             Vector<Integer> lune = new Vector<>();
 
             for(int j = 0; j <= 10; j++) {
@@ -41,7 +50,9 @@ public class Tabella extends Frame {
             }
 
             JComboBox<Integer> luneComboBox = new JComboBox<>(lune);
-            add(luneComboBox);
+            p1.add(luneComboBox);
+
+
 
         }
 

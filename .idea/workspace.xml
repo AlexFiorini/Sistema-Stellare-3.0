@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Rimosse schermate, aggiunto loop tabella">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Rimossi spazi">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Solare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Solare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Star.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -49,26 +54,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Alex/Utenti/Alex/Documenti/Programmi/Java/Sistema-solare-3.0/src/main/java/com/sistemasolare&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "D:/Alex/Utenti/Alex/Documenti/Programmi/Java/Sistema-solare-3.0/src/main/java/com/sistemasolare",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Alex\Utenti\Alex\Documenti\Programmi\Java\Sistema-solare-3.0\src\main\resources\com\sistemasolare\schermate" />
       <recent name="D:\Alex\Utenti\Alex\Documenti\Programmi\Java\Sistema-solare-3.0\src\main\resources\com\sistemasolare\" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tabella">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Main" />
       <module name="Sistemasolare30" />
@@ -78,6 +83,19 @@
     </configuration>
     <configuration name="Sistema_Solare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Sistema_Solare" />
+      <module name="Sistemasolare30" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sistemasolare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sistema_Stellare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Sistema_Stellare" />
       <module name="Sistemasolare30" />
       <extension name="coverage">
         <pattern>
@@ -117,8 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tabella" />
         <item itemvalue="Application.Sistema_Solare" />
+        <item itemvalue="Application.Tabella" />
+        <item itemvalue="Application.Sistema_Stellare" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683281332910</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Rimossi spazi">
+      <created>1683281477731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683281477731</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +268,8 @@
     <MESSAGE value="Rinominati file, rimosso controllo risoluzione schermo a causa di bug (risoluzione catturata diversa da quella reale)" />
     <MESSAGE value="Aggiunta Tabella.java, ridotto link in style.css, aggiunti parametri in Star.java, Planet.java, Moon.java, modificato Lancio.java" />
     <MESSAGE value="Rimosse schermate, aggiunto loop tabella" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rimosse schermate, aggiunto loop tabella" />
+    <MESSAGE value="Rimossi spazi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rimossi spazi" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

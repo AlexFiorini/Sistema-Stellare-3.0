@@ -13,7 +13,7 @@ public class Sistema_Solare extends Frame implements ActionListener {
     private int marsY = 150;
     private int venusX = 200;
     private int venusY = 200;
-    private int moonX = earthX + 50;
+    private int moonX = earthX + 20;
     private int moonY = earthY;
     public Sistema_Solare() {
         super("Sistema Solare");
@@ -48,8 +48,10 @@ public class Sistema_Solare extends Frame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (isRunning) {
             isRunning = false;
+            startButton.setLabel("Start");
         } else {
             isRunning = true;
+            startButton.setLabel("Stop");
             Thread t = new Thread(() -> {
                 while (isRunning) {
                     angle++;
@@ -60,13 +62,13 @@ public class Sistema_Solare extends Frame implements ActionListener {
                     marsY = (int)(sunY + 150 * Math.sin(radians * 0.5));
                     venusX = (int)(sunX + 80 * Math.cos(radians * 1.2));
                     venusY = (int)(sunY + 80 * Math.sin(radians * 1.2));
-                    moonX = earthX + 10;
+                    moonX = earthX + 20;
                     moonY = earthY;
                     repaint();
                     try {
                         Thread.sleep(50);
-                    } catch (InterruptedException e1) {
-                        e1.printStackTrace();
+                    } catch (InterruptedException f) {
+                        f.printStackTrace();
                     }
                 }
             });
@@ -77,5 +79,3 @@ public class Sistema_Solare extends Frame implements ActionListener {
         new Sistema_Solare();
     }
 }
-
-
