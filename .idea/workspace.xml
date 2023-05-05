@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunta Tabella.java, ridotto link in style.css, aggiunti parametri in Star.java, Planet.java, Moon.java, modificato Lancio.java">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Rimosse schermate, aggiunto loop tabella">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683281176626</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rimosse schermate, aggiunto loop tabella">
+      <created>1683281332910</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683281332910</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +241,8 @@
     <MESSAGE value="Modificato pom.xml" />
     <MESSAGE value="Rinominati file, rimosso controllo risoluzione schermo a causa di bug (risoluzione catturata diversa da quella reale)" />
     <MESSAGE value="Aggiunta Tabella.java, ridotto link in style.css, aggiunti parametri in Star.java, Planet.java, Moon.java, modificato Lancio.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta Tabella.java, ridotto link in style.css, aggiunti parametri in Star.java, Planet.java, Moon.java, modificato Lancio.java" />
+    <MESSAGE value="Rimosse schermate, aggiunto loop tabella" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rimosse schermate, aggiunto loop tabella" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

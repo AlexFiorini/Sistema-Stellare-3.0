@@ -1,11 +1,8 @@
 package com.sistemasolare;
 
 import java.awt.*;
-
 import java.awt.event.*;
-
 import java.util.Vector;
-
 import javax.swing.*;
 
 public class Tabella extends Frame {
