@@ -29,7 +29,8 @@ public class Tabella extends Frame {
         p1.add(new Label("Grado di Inclinazione"));
         p1.add(new Label("Distanza dall'oggetto"));
         p1.add(new Label("Lune"));
-        b.addActionListener(e -> dispose());
+        b.addActionListener(e -> Creation());
+
 
         for(int i = 1; i <= 10; i++) {
             p1.add(new Label("Pianeta " + i));
@@ -51,9 +52,6 @@ public class Tabella extends Frame {
 
             JComboBox<Integer> luneComboBox = new JComboBox<>(lune);
             p1.add(luneComboBox);
-
-
-
         }
 
         addWindowListener(new WindowAdapter() {
@@ -63,6 +61,21 @@ public class Tabella extends Frame {
 
         });
         setVisible(true);
+    }
+
+    public void Creation() {
+        int count = 0;
+        Component[] components = p1.getComponents();
+        for (Component component : components) {
+            if (component instanceof TextField textField) {
+                if (!textField.getText().isEmpty()) {
+                    count++;
+                    /*TODO: Creare pianeti con i dati*/
+                }
+            }
+        }
+        System.out.println("Numero di TextField di nome riempite: " + count);
+        dispose();
     }
 
     public static void main(String[] args) {
