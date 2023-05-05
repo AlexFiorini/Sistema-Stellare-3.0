@@ -61,11 +61,18 @@ public class Main extends Application {
                         }
                     }
                     case 3 -> {
-
+                        Lancio l = new Lancio(stage);
+                        l.Takeoff();
+                        try {
+                            Thread.sleep(6000);
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                        pressed++;
                     }
                     case 4 -> {
-                        Lancio l = new Lancio(stage, (AnchorPane) stage.getScene().getRoot().lookup("#menu"));
-                        l.Takeoff();
+                        stage.close();
+                        Tabella t = new Tabella();
                         pressed++;
                     }
                     default -> {

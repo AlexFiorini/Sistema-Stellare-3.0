@@ -20,7 +20,9 @@ public class Selezione_galassie {
 
     public void start() {
         String foto = "https://shorturl.at/huW47";
-        stage.getScene().getRoot().setStyle("-fx-background-image: url('" + foto + "');");
+        stage.getScene().getRoot().setStyle("-fx-background-image: url('" + foto + "')" +
+                "" +
+                ";");
         rectangle = new Rectangle(80, 100, 418, 500);
         rectangle.setFill(Color.TRANSPARENT);
         rectangle.setStroke(Color.WHITE);
@@ -34,12 +36,10 @@ public class Selezione_galassie {
             case 1 -> {
                 selected++;
                 rectangle.setX(rectangle.getX() + 480);
-                System.out.println(selected);
             }
             case 2 -> {
                 selected++;
                 rectangle.setX(rectangle.getX() + 500);
-                System.out.println(selected);
             }
             default -> {
             }
@@ -51,12 +51,10 @@ public class Selezione_galassie {
             case 2 -> {
                 selected--;
                 rectangle.setX(rectangle.getX() - 480);
-                System.out.println(selected);
             }
             case 3 -> {
                 selected--;
                 rectangle.setX(rectangle.getX() - 500);
-                System.out.println(selected);
             }
             default -> {
             }
