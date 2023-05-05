@@ -57,29 +57,19 @@ public class Main extends Application {
                             s.left();
                         } else if (event.getCode().toString().equals("ENTER")) {
                             selected = s.enter();
+                            Lancio l = new Lancio(stage);
+                            l.Takeoff();
                             pressed++;
                         }
                     }
                     case 3 -> {
-                        Lancio l = new Lancio(stage);
-                        l.Takeoff();
-                        try {
-                            Thread.sleep(6000);
-                        } catch (InterruptedException e) {
-                            throw new RuntimeException(e);
-                        }
-                        pressed++;
-                    }
-                    case 4 -> {
                         stage.close();
                         for(int i = 0; i < selected; i++) {
-                            Tabella t = new Tabella();
+                            new Tabella();
                         }
                         pressed++;
                     }
-                    case 5 -> {
-                        Sistema_Solare ss = new Sistema_Solare();
-                    }
+                    case 4 -> new Sistema_Solare();
 
                     default -> {
                     }

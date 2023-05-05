@@ -20,9 +20,7 @@ public class Selezione_galassie {
 
     public void start() {
         String foto = "https://shorturl.at/huW47";
-        stage.getScene().getRoot().setStyle("-fx-background-image: url('" + foto + "')" +
-                "" +
-                ";");
+        stage.getScene().getRoot().setStyle("-fx-background-image: url('" + foto + "');");
         rectangle = new Rectangle(80, 100, 418, 500);
         rectangle.setFill(Color.TRANSPARENT);
         rectangle.setStroke(Color.WHITE);
