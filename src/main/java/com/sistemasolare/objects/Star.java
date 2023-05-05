@@ -21,7 +21,7 @@ public class Star extends OrbitalSystem {
         super();
         this.mass = 0;
         this.planets = new Planet[1];
-        this.planets[0] = new Planet(null, 10, 0);
+        this.planets[0] = new Planet(null, 10, 0, 180, "pluto");
     }
     /**
      * @return Array of planets.

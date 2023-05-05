@@ -1,5 +1,9 @@
 package com.sistemasolare;
 
+import com.sistemasolare.objects.Moon;
+import com.sistemasolare.objects.Planet;
+import com.sistemasolare.objects.Star;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Vector;
@@ -7,9 +11,11 @@ import javax.swing.*;
 
 public class Tabella extends Frame {
 
-    JPanel p1 = new JPanel(new GridLayout(11, 7));
+    JPanel p1 = new JPanel(new GridLayout(11, 5));
     JPanel p2 = new JPanel(new FlowLayout());
     JButton b = new JButton("Continua");
+    Star stella;
+    Planet[] pianeti;
 
     public Tabella() {
         setTitle("Tabella Pianeti");
@@ -24,10 +30,8 @@ public class Tabella extends Frame {
         p1.setForeground(Color.GREEN);
         p1.add(new Label("Pianeta"));
         p1.add(new Label("Nome"));
-        p1.add(new Label("Posizione X"));
-        p1.add(new Label("Posizione Y"));
         p1.add(new Label("Grado di Inclinazione"));
-        p1.add(new Label("Distanza dall'oggetto"));
+        p1.add(new Label("Distanza dalla stella"));
         p1.add(new Label("Lune"));
         b.addActionListener(e -> Creation());
 
@@ -36,10 +40,6 @@ public class Tabella extends Frame {
             p1.add(new Label("Pianeta " + i));
             TextField nomeField = new TextField();
             p1.add(nomeField);
-            TextField posXField = new TextField();
-            p1.add(posXField);
-            TextField posYField = new TextField();
-            p1.add(posYField);
             TextField inclinazioneField = new TextField();
             p1.add(inclinazioneField);
             TextField distanzaField = new TextField();
@@ -66,15 +66,42 @@ public class Tabella extends Frame {
     public void Creation() {
         int count = 0;
         Component[] components = p1.getComponents();
-        for (Component component : components) {
+        for (int i = 0; i < components.length; i++) {
+            Component component = components[i];
             if (component instanceof TextField textField) {
                 if (!textField.getText().isEmpty()) {
                     count++;
-                    /*TODO: Creare pianeti con i dati*/
+                    i += 3;
                 }
             }
         }
-        System.out.println("Numero di TextField di nome riempite: " + count);
+        pianeti = new Planet[count];
+        count = 0;
+        components = p1.getComponents();
+        for (int i = 0; i < components.length; i++) {
+            Component component = components[i];
+            if (component instanceof TextField textField) {
+                if (!textField.getText().isEmpty()) {
+                    String nome = textField.getText();
+                    System.out.println(component.getParent().getComponentZOrder(component));
+                    TextField inclinazioneField = (TextField) components[i + 1];
+                    TextField distanzaField = (TextField) components[i + 2];
+                    JComboBox<Integer> luneComboBox = (JComboBox<Integer>) components[i + 3];
+                    int inclinazione = Integer.parseInt(inclinazioneField.getText());
+                    double distanza = Double.parseDouble(distanzaField.getText());
+                    int lune = (int) luneComboBox.getSelectedItem();
+                    Moon[] moon = new Moon[lune];
+                    for (int j = 0; j < lune; j++) {
+                        moon[j] = new Moon(Math.random()%100);
+                    }
+                    pianeti[count] = new Planet(moon, distanza, inclinazione, Math.random()%3000, nome);
+                    count++;
+                    i += 3;
+                }
+            }
+        }
+        stella = new Star(pianeti, Math.random()%3000);
+        System.out.println(stella);
         dispose();
     }
 

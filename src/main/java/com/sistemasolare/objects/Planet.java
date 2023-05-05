@@ -16,11 +16,11 @@ public class Planet {
      * @param distance: Distance from the star.
      * @param mass: Mass of the planet.
      */
-    public Planet(Moon[] moons, double distance, double mass) {
+    public Planet(Moon[] moons, double distance, int angle, double mass, String Name) {
         this.distance = distance;
         this.moons = moons;
         this.color = new Color((int)(Math.random() * 0x1000000));
-        this.angle = (int) (Math.random()%360);
+        this.angle = angle;
         this.mass = mass;
     }
 
