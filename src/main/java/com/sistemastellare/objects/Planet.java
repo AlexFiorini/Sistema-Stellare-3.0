@@ -55,6 +55,22 @@ public class Planet {
         return color;
     }
 
+    public String getName() {
+        return Name;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public double getMass() {
+        return mass;
+    }
+
+    public int getAngle() {
+        return angle;
+    }
+
     /**
      * Allows the planet to move around the star.
      * @param centerX: X coordinate of the star.

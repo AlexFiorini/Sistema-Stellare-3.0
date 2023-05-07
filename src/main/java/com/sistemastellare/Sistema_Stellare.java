@@ -3,6 +3,7 @@ package com.sistemastellare;
 import com.sistemastellare.objects.Moon;
 import com.sistemastellare.objects.Planet;
 import com.sistemastellare.objects.Star;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -45,6 +46,24 @@ public class Sistema_Stellare extends Frame implements ActionListener {
             }
         }
         setVisible(true);
+
+        addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON1) {
+                    int mouseX = e.getX();
+                    int mouseY = e.getY();
+                    for (Planet p: Stella[index].getPlanets()) {
+                        if (mouseX >= p.getX() && mouseX <= p.getX() + 20
+                                && mouseY >= p.getY() && mouseY <= p.getY() + 20) {
+                            PlanetInfoDialog dialog = new PlanetInfoDialog(p);
+                            dialog.setVisible(true);
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+
     }
 
     /**
