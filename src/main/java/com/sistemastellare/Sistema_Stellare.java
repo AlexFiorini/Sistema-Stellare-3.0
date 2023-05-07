@@ -3,7 +3,6 @@ package com.sistemastellare;
 import com.sistemastellare.objects.Moon;
 import com.sistemastellare.objects.Planet;
 import com.sistemastellare.objects.Star;
-
 import java.awt.*;
 import java.awt.event.*;
 

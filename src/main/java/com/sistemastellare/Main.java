@@ -73,7 +73,7 @@ public class Main extends Application {
                             ss = new Sistema_Stellare[selected];
                             for (int i = 0; i < selected; i++) {
                                 int j = i;
-                                Tabella t = new Tabella(stella -> stelle[j] = stella);
+                                new Tabella(stella -> stelle[j] = stella);
                                 while (stelle[i] == null) {
                                     try {
                                         Thread.sleep(100);

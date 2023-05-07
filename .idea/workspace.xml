@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunti commenti">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunto pulsante di cambio galassie solo se è presente più di una galassia">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Sistema_Stellare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Sistema_Stellare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Tabella.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,49 +70,10 @@
       <recent name="D:\Alex\Utenti\Alex\Documenti\Programmi\Java\Sistema-solare-3.0\src\main\resources\com\sistemasolare\" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Main" />
       <module name="Sistemasolare30" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sistema_Solare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Sistema_Solare" />
-      <module name="Sistemasolare30" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sistemastellare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sistema_Stellare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Sistema_Stellare" />
-      <module name="Sistemasolare30" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sistemastellare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tabella" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Tabella" />
-      <module name="Sistemasolare30" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sistemastellare.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,13 +91,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Sistema_Stellare" />
-        <item itemvalue="Application.Sistema_Solare" />
-        <item itemvalue="Application.Tabella" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -306,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683466984422</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Aggiunto pulsante di cambio galassie solo se è presente più di una galassia">
+      <created>1683467352059</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1683467352059</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,7 +307,8 @@
     <MESSAGE value="Cambiato package sistema-solare -&gt; sistema-stellare" />
     <MESSAGE value="Modificata la formattazione dei file" />
     <MESSAGE value="Aggiunti commenti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti commenti" />
+    <MESSAGE value="Aggiunto pulsante di cambio galassie solo se è presente più di una galassia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto pulsante di cambio galassie solo se è presente più di una galassia" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
