@@ -55,18 +55,30 @@ public class Planet {
         return color;
     }
 
+    /**
+     * @return Name of the planet.
+     */
     public String getName() {
         return Name;
     }
 
+    /**
+     * @return Distance from the star.
+     */
     public double getDistance() {
         return distance;
     }
 
+    /**
+     * @return Mass of the planet.
+     */
     public double getMass() {
         return mass;
     }
 
+    /**
+     * @return Angle of the planet.
+     */
     public int getAngle() {
         return angle;
     }

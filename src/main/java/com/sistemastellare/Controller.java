@@ -12,6 +12,9 @@ public class Controller {
     Label continua;
     public ScaleTransition scaleTransition;
 
+    /**
+     * Create the animation for the label.
+     */
     public void initialize() {
         scaleTransition = new ScaleTransition(Duration.seconds(1), continua);
         scaleTransition.setByX(0.5);

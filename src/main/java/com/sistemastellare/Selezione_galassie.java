@@ -29,6 +29,9 @@ public class Selezione_galassie {
         selected = 1;
     }
 
+    /**
+     * Move the selection rectangle to the right
+     */
     public void right() {
         switch (selected) {
             case 1 -> {
@@ -43,6 +46,9 @@ public class Selezione_galassie {
         }
     }
 
+    /**
+     * Move the selection rectangle to the left
+     */
     public void left() {
         switch (selected) {
             case 2 -> {

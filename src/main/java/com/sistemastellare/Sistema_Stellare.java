@@ -48,6 +48,9 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         setVisible(true);
 
         addMouseListener(new MouseAdapter() {
+            /**
+             * On left click, if the mouse is on a planet, a dialog with the planet's info is shown
+             */
             public void mouseClicked(MouseEvent e) {
                 if (e.getButton() == MouseEvent.BUTTON1) {
                     int mouseX = e.getX();
