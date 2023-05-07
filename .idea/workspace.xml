@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunto pannello d'informazioni dei pianeti">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/PlanetInfoDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/PlanetInfoDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Sistema_Stellare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Sistema_Stellare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Planet.java" afterDir="false" />
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunti commenti. Final commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -35,7 +32,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="d37b10c9-b88b-47bc-a731-06bdc569500b" />
-        <option name="url" value="https://github.com/AlexFiorini/Sistema-Solare-3.0.git" />
+        <option name="url" value="https://github.com/AlexFiorini/Sistema-Stellare-3.0.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -76,19 +73,19 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Main" />
-      <module name="Sistemasolare30" />
+      <module name="Sistemastellare30" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="Sistema-solare-3.0" />
+      <module name="Sistema-stellare-3.0" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Sistema-solare-3.0" />
+      <module name="Sistema-stellare-3.0" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -286,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683470161867</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Aggiunti commenti. Final commit">
+      <created>1683470480371</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1683470480371</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,7 +305,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aggiunta seconda schermata, Selezione_galassie, modificata schermata iniziale" />
     <MESSAGE value="Migliorati switch e rimosso import non usato" />
     <MESSAGE value="Migliorato switch" />
     <MESSAGE value="Aggiunto test rotazione, aggiunto lancio razzo (temp)" />
@@ -326,7 +329,8 @@
     <MESSAGE value="Aggiunto pulsante di cambio galassie solo se è presente più di una galassia" />
     <MESSAGE value="Rimossa variabile Tabella" />
     <MESSAGE value="Aggiunto pannello d'informazioni dei pianeti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto pannello d'informazioni dei pianeti" />
+    <MESSAGE value="Aggiunti commenti. Final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti commenti. Final commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
