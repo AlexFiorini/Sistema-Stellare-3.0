@@ -11,14 +11,16 @@ class PlanetInfoDialog extends JDialog {
     private final JLabel angolo;
     private final JLabel lune;
     private final JLabel massa;
+    private final JLabel x = new JLabel();
+    private final JLabel y = new JLabel();
 
 
     public PlanetInfoDialog(Planet planet) {
         super((Frame) null, true);
         setTitle("Informazioni sul pianeta");
-        setLayout(new GridLayout(5, 1));
+        setLayout(new GridLayout(7, 1));
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setSize(300, 100);
+        setSize(300, 140);
         setResizable(false);
 
         nome = new JLabel(getNome(planet));
@@ -27,10 +29,12 @@ class PlanetInfoDialog extends JDialog {
         lune = new JLabel(getLune(planet));
         massa = new JLabel(getMassa(planet));
         add(nome);
+        add(massa);
         add(distanza);
         add(angolo);
+        add(x);
+        add(y);
         add(lune);
-        add(massa);
 
         Timer timer = new Timer(10, e -> {
             nome.setText(getNome(planet));
@@ -38,6 +42,8 @@ class PlanetInfoDialog extends JDialog {
             angolo.setText(getAngolo(planet));
             lune.setText(getLune(planet));
             massa.setText(getMassa(planet));
+            x.setText(getX(planet));
+            y.setText(getY(planet));
         });
         timer.start();
     }
@@ -60,5 +66,13 @@ class PlanetInfoDialog extends JDialog {
 
     private String getMassa(Planet planet) {
         return "Massa: " + planet.getMass();
+    }
+
+    private String getX(Planet planet) {
+        return "X: " + planet.getX();
+    }
+
+    private String getY(Planet planet) {
+        return "Y: " + planet.getY();
     }
 }
