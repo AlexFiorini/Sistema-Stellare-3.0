@@ -1,4 +1,4 @@
-package com.sistemasolare;
+package com.sistemastellare;
 
 import javafx.fxml.FXML;
 import javafx.animation.ScaleTransition;

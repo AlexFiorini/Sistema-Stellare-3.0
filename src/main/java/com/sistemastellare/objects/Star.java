@@ -1,4 +1,4 @@
-package com.sistemasolare.objects;
+package com.sistemastellare.objects;
 
 /**
  * Create a new Star. Extends OrbitalSystem.

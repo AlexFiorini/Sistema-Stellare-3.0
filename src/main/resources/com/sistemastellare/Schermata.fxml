@@ -6,7 +6,7 @@
 
 <AnchorPane fx:id="menu" prefHeight="1080" prefWidth="1920" stylesheets="@style.css"
             xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.sistemasolare.Controller">
+            fx:controller="com.sistemastellare.Controller">
    <Label fx:id="continua" layoutX="613.0" layoutY="706.0" text="Premi un tasto per iniziare">
       <font>
          <Font size="30.0"/>

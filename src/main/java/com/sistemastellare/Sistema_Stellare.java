@@ -1,8 +1,8 @@
-package com.sistemasolare;
+package com.sistemastellare;
 
-import com.sistemasolare.objects.Moon;
-import com.sistemasolare.objects.Planet;
-import com.sistemasolare.objects.Star;
+import com.sistemastellare.objects.Moon;
+import com.sistemastellare.objects.Planet;
+import com.sistemastellare.objects.Star;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -51,7 +51,7 @@ public class Sistema_Stellare extends Frame implements ActionListener {
     public void paint(Graphics g) {
         g.setColor(Color.YELLOW);
         int dim = 20;
-        g.fillOval(this.getWidth()/2- dim /2, this.getHeight()/2- dim /2, dim, dim);
+        g.fillOval(this.getWidth()/2 - (dim+10)/2, this.getHeight()/2 - (dim+10)/2, dim+10, dim+10);
         for(Planet p : Stella[index].getPlanets()) {
             g.setColor(p.getColor());
             g.fillOval(p.getX(), p.getY(), dim, dim);

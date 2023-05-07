@@ -1,4 +1,4 @@
-package com.sistemasolare.objects;
+package com.sistemastellare.objects;
 
 import java.awt.*;
 
@@ -89,9 +89,11 @@ public class Planet {
         }
         angle++;
         double radians = Math.toRadians(getAngle());
-        x = (int) (centerX + distance * Math.cos(radians) - 10);
-        y = (int) (centerY + distance * Math.sin(radians) - 10);
+        x = (int) (centerX + distance * Math.cos(radians) - 15);
+        y = (int) (centerY + distance * Math.sin(radians) - 15);
         for(Moon moon : moons) {
+            moon.setPlanetX(x);
+            moon.setPlanetY(y);
             moon.Move();
         }
     }

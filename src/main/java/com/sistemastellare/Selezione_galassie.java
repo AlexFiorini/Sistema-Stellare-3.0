@@ -1,4 +1,4 @@
-package com.sistemasolare;
+package com.sistemastellare;
 
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;

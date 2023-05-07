@@ -1,6 +1,6 @@
-package com.sistemasolare;
+package com.sistemastellare;
 
-import com.sistemasolare.objects.Star;
+import com.sistemastellare.objects.Star;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

@@ -1,14 +1,14 @@
-package com.sistemasolare;
+package com.sistemastellare;
 
-import com.sistemasolare.objects.Moon;
-import com.sistemasolare.objects.Planet;
-import com.sistemasolare.objects.Star;
-
+import com.sistemastellare.objects.Moon;
+import com.sistemastellare.objects.Planet;
+import com.sistemastellare.objects.Star;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Vector;
 import java.util.function.Consumer;
 import javax.swing.*;
+
 
 public class Tabella extends Frame {
 
@@ -66,11 +66,9 @@ public class Tabella extends Frame {
             public void windowClosing(WindowEvent we) {
                 dispose();
             }
-
         });
         setVisible(true);
     }
-
 
     public Star Creation() {
         int count = 0;
@@ -93,14 +91,16 @@ public class Tabella extends Frame {
                 if (!textField.getText().isEmpty()) {
                     String nome = textField.getText();
                     TextField inclinazioneField = (TextField) components[i + 1];
-                    TextField distanzaField = (TextField) components[i + 2];
-                    JComboBox<Integer> luneComboBox = (JComboBox<Integer>) components[i + 3];
                     int inclinazione = Integer.parseInt(inclinazioneField.getText());
+                    TextField distanzaField = (TextField) components[i + 2];
                     double distanza = Double.parseDouble(distanzaField.getText());
-                    int lune = (int) luneComboBox.getSelectedItem();
+                    @SuppressWarnings("unchecked")
+                    JComboBox<Integer> luneComboBox = (JComboBox<Integer>) components[i + 3];
+                    Integer selectedItem = (Integer) luneComboBox.getSelectedItem();
+                    int lune = selectedItem != null ? selectedItem : 0; /* se selectedItem è null, allora lune == 0 */
                     Moon[] moon = new Moon[lune];
                     for (int j = 0; j < lune; j++) {
-                        moon[j] = new Moon(Math.random()%10, (int) (Math.random()*360));
+                        moon[j] = new Moon(Math.random()%10, (int) (Math.random()*360), centerx, centery);
                     }
                     pianeti[count] = new Planet(moon, distanza, inclinazione, Math.random()*3000, nome, centerx, centery);
                     count++;

@@ -10,6 +10,7 @@ module com.sistemasolare {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    exports com.sistemasolare;
-    opens com.sistemasolare to javafx.fxml;
+    exports com.sistemastellare.objects;
+    exports com.sistemastellare;
+    opens com.sistemastellare to javafx.fxml;
 }

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunto movimento pianeti e lune, aggiunta possibilità di cambiare galassia">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunta possibilità di cambiare galassia visualizzata">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Star.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683457757053</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Aggiunta possibilità di cambiare galassia visualizzata">
+      <created>1683461423111</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1683461423111</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +325,8 @@
     <MESSAGE value="Aggiunto controllo TextField riempite" />
     <MESSAGE value="Aggiunto salvataggio informazioni inserite nella tabella" />
     <MESSAGE value="Aggiunto movimento pianeti e lune, aggiunta possibilità di cambiare galassia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto movimento pianeti e lune, aggiunta possibilità di cambiare galassia" />
+    <MESSAGE value="Aggiunta possibilità di cambiare galassia visualizzata" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta possibilità di cambiare galassia visualizzata" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
