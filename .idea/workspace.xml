@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunto controllo TextField riempite">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunto salvataggio informazioni inserite nella tabella">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Solare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Solare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" afterDir="false" />
@@ -72,7 +75,7 @@
       <recent name="D:\Alex\Utenti\Alex\Documenti\Programmi\Java\Sistema-solare-3.0\src\main\resources\com\sistemasolare\" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tabella">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Main" />
       <module name="Sistemasolare30" />
@@ -134,9 +137,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Tabella" />
         <item itemvalue="Application.Sistema_Stellare" />
         <item itemvalue="Application.Sistema_Solare" />
+        <item itemvalue="Application.Tabella" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683299892146</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Aggiunto salvataggio informazioni inserite nella tabella">
+      <created>1683307051489</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683307051489</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,18 +310,8 @@
     <MESSAGE value="Modificata immagine e metodo di caricamento del lancio del razzo" />
     <MESSAGE value="Realizzato movimento di base" />
     <MESSAGE value="Aggiunto controllo TextField riempite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto controllo TextField riempite" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Aggiunto salvataggio informazioni inserite nella tabella" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto salvataggio informazioni inserite nella tabella" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

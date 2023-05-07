@@ -7,7 +7,7 @@ public class Planet {
     private final Moon[] moons;
     private final Color color;
     private final double mass;
-    private String Name;
+    private final String Name;
     private int x, y;
     private int angle;
 
@@ -16,12 +16,15 @@ public class Planet {
      * @param distance: Distance from the star.
      * @param mass: Mass of the planet.
      */
-    public Planet(Moon[] moons, double distance, int angle, double mass, String Name) {
+    public Planet(Moon[] moons, double distance, int angle, double mass, String Name, int centerx, int centery) {
         this.distance = distance;
         this.moons = moons;
         this.color = new Color((int)(Math.random() * 0x1000000));
         this.angle = angle;
         this.mass = mass;
+        this.Name = Name;
+        this.x = (int) (centerx + distance * Math.cos(angle));
+        this.y = (int) (centery + distance * Math.sin(angle));
     }
 
     /**
@@ -60,24 +63,10 @@ public class Planet {
     }
 
     /**
-     * @param x: X coordinate of the planet.
-     */
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    /**
      * @return Y coordinate of the planet.
      */
     public int getY() {
         return y;
-    }
-
-    /**
-     * @param y: Y coordinate of the planet.
-     */
-    public void setY(int y) {
-        this.y = y;
     }
 
     /**
@@ -94,10 +83,16 @@ public class Planet {
         return angle;
     }
 
-    /**
-     * @param angle: Angle of the planet.
-     */
-    public void setAngle(int angle) {
-        this.angle = angle;
+    public void Move(int centerX, int centerY) {
+        if(angle >= 360) {
+            angle -= 360;
+        }
+        angle++;
+        double radians = Math.toRadians(getAngle());
+        x = (int) (centerX + distance * Math.cos(radians) - 10);
+        y = (int) (centerY + distance * Math.sin(radians) - 10);
+        for(Moon moon : moons) {
+            moon.Move();
+        }
     }
 }

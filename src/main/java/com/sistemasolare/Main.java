@@ -1,5 +1,6 @@
 package com.sistemasolare;
 
+import com.sistemasolare.objects.Star;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,6 +14,9 @@ public class Main extends Application {
     int pressed = 0;
     int selected = 0;
     Selezione_galassie s;
+    Star[] stelle;
+    boolean first = true;
+    Sistema_Stellare[] ss;
 
     @Override
     public void start(Stage stage) {
@@ -63,13 +67,35 @@ public class Main extends Application {
                         }
                     }
                     case 3 -> {
-                        stage.close();
-                        for(int i = 0; i < selected; i++) {
-                            new Tabella();
+                        if(first) {
+                            stage.close();
+                            stelle = new Star[selected];
+                            ss = new Sistema_Stellare[selected];
+                            for(int i = 0; i < selected; i++) {
+                                int j = i;
+                                Tabella t = new Tabella(stella -> stelle[j] = stella);
+                            }
+                            while(stelle[0] == null) {
+                                try {
+                                    Thread.sleep(100);
+                                } catch (InterruptedException e) {
+                                    throw new RuntimeException(e);
+                                }
+                            }
+                            ss[0] = new Sistema_Stellare(stelle[0]);
+                        } else {
+                            if(event.getCode().toString().equals("1")) {
+                                dispose();
+                                ss[0] = new Sistema_Stellare(stelle[0]);
+                            } else if (event.getCode().toString().equals("2")) {
+                                dispose();
+                                ss[1] = new Sistema_Stellare(stelle[1]);
+                            } else if (event.getCode().toString().equals("3")) {
+                                dispose();
+                                ss[2] = new Sistema_Stellare(stelle[2]);
+                            }
                         }
-                        pressed++;
                     }
-                    case 4 -> new Sistema_Solare();
 
                     default -> {
                     }
@@ -79,7 +105,15 @@ public class Main extends Application {
         });
     }
 
-
+    public void dispose() {
+        for(int i = 0; i < 3; i++) {
+            if(ss[i] != null) {
+                ss[i].dispose();
+                ss[i] = null;
+                break;
+            }
+        }
+    }
 
     public static void main(String[] args) {
         launch();

@@ -7,6 +7,7 @@ import com.sistemasolare.objects.Star;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Vector;
+import java.util.function.Consumer;
 import javax.swing.*;
 
 public class Tabella extends Frame {
@@ -16,8 +17,9 @@ public class Tabella extends Frame {
     JButton b = new JButton("Continua");
     Star stella;
     Planet[] pianeti;
+    int centerx, centery;
 
-    public Tabella() {
+    public Tabella(Consumer<Star> consumer) {
         setTitle("Tabella Pianeti");
         setExtendedState(Frame.MAXIMIZED_BOTH);
         setUndecorated(true);
@@ -33,8 +35,14 @@ public class Tabella extends Frame {
         p1.add(new Label("Grado di Inclinazione"));
         p1.add(new Label("Distanza dalla stella"));
         p1.add(new Label("Lune"));
-        b.addActionListener(e -> Creation());
+        b.addActionListener(e-> {
+                stella = Creation();
+                consumer.accept(stella);
+        });
 
+
+        centerx = getWidth()/2;
+        centery = getHeight()/2;
 
         for(int i = 1; i <= 10; i++) {
             p1.add(new Label("Pianeta " + i));
@@ -63,7 +71,8 @@ public class Tabella extends Frame {
         setVisible(true);
     }
 
-    public void Creation() {
+
+    public Star Creation() {
         int count = 0;
         Component[] components = p1.getComponents();
         for (int i = 0; i < components.length; i++) {
@@ -83,7 +92,6 @@ public class Tabella extends Frame {
             if (component instanceof TextField textField) {
                 if (!textField.getText().isEmpty()) {
                     String nome = textField.getText();
-                    System.out.println(component.getParent().getComponentZOrder(component));
                     TextField inclinazioneField = (TextField) components[i + 1];
                     TextField distanzaField = (TextField) components[i + 2];
                     JComboBox<Integer> luneComboBox = (JComboBox<Integer>) components[i + 3];
@@ -92,20 +100,16 @@ public class Tabella extends Frame {
                     int lune = (int) luneComboBox.getSelectedItem();
                     Moon[] moon = new Moon[lune];
                     for (int j = 0; j < lune; j++) {
-                        moon[j] = new Moon(Math.random()%100);
+                        moon[j] = new Moon(Math.random()%10, (int) (Math.random()*360));
                     }
-                    pianeti[count] = new Planet(moon, distanza, inclinazione, Math.random()%3000, nome);
+                    pianeti[count] = new Planet(moon, distanza, inclinazione, Math.random()*3000, nome, centerx, centery);
                     count++;
                     i += 3;
                 }
             }
         }
-        stella = new Star(pianeti, Math.random()%3000);
-        System.out.println(stella);
+        stella = new Star(pianeti, Math.random()*30000);
         dispose();
-    }
-
-    public static void main(String[] args) {
-        new Tabella();
+        return stella;
     }
 }
