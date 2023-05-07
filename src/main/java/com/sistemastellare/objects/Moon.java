@@ -3,45 +3,44 @@ package com.sistemastellare.objects;
 public class Moon {
     private final double distance;
     private int x, y;
-    private int planetx, planety;
     private int angle;
 
-    public Moon(double distance, int angle, int planetx, int planety) {
+    /**
+     * @param distance: Distance from the planet.
+     * @param angle: Angle of the moon.
+     */
+    public Moon(double distance, int angle) {
         this.distance = distance;
         this.angle = angle;
-        this.x = (int)(distance * Math.cos(angle));
-        this.y = (int)(distance * Math.sin(angle));
-        this.planetx = planetx;
-        this.planety = planety;
+        this.x = 0;
+        this.y = 0;
     }
 
-    public void setPlanetX(int planetx) {
-        x = planetx;
-    }
-
-    public void setPlanetY(int planety) {
-        y = planety;
-    }
-
+    /**
+     * @return X coordinate of moon.
+     */
     public int getX() {
         return x;
     }
 
+    /**
+     * @return Y coordinate of moon.
+     */
     public int getY() {
         return y;
     }
 
-    public int getAngle() {
-        return angle;
-    }
-
-    public void Move() {
-        if (angle >= 360) {
-            angle -= 360;
-        }
+    /**
+     * @deprecated Allows the moon to move around the star.
+     * @param planetx: X coordinate of the planet.
+     * @param planety: Y coordinate of the planet.
+     */
+    public void Move(int planetx, int planety) {
         angle++;
-        double radians = Math.toRadians(getAngle());
+        double radians = Math.toRadians(angle);
         x = (int)(planetx + distance * Math.cos(radians));
         y = (int)(planety + distance * Math.sin(radians));
     }
+
+
 }

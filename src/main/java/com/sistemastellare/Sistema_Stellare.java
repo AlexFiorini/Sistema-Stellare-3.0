@@ -37,7 +37,6 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         add(startButton);
         for (int i = 0; i < Stella.length; i++) {
             if (Stella[i] != null) {
-                System.out.println(i);
                 planetButtons[i] = new Button("Galassia " + (i + 1));
                 planetButtons[i].setBounds(50, 50 + 40 * (i + 1), 80, 30);
                 planetButtons[i].addActionListener(this);
@@ -48,6 +47,9 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         setVisible(true);
     }
 
+    /**
+     * @deprecated This shows only a moon orbiting a planet because the moons are too close to each other
+     */
     public void paint(Graphics g) {
         g.setColor(Color.YELLOW);
         int dim = 20;
@@ -63,6 +65,9 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         }
     }
 
+    /**
+     * Allows the user to select a galaxy to show or to change the state of the simulation.
+     */
     @SuppressWarnings("BusyWait")
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == planetButtons[0]) {

@@ -28,31 +28,10 @@ public class Planet {
     }
 
     /**
-     * @return Distance from the star.
-     */
-    public double getDistance() {
-        return distance;
-    }
-
-    /**
-     * @return Mass of the planet.
-     */
-    public double getMass() {
-        return mass;
-    }
-
-    /**
      * @return Array of moons.
      */
     public Moon[] getMoons() {
         return moons;
-    }
-
-    /**
-     * @return Name of the planet.
-     */
-    public String getName() {
-        return Name;
     }
 
     /**
@@ -77,24 +56,17 @@ public class Planet {
     }
 
     /**
-     * @return Angle of the planet in the orbit.
+     * Allows the planet to move around the star.
+     * @param centerX: X coordinate of the star.
+     * @param centerY: Y coordinate of the star.
      */
-    public int getAngle() {
-        return angle;
-    }
-
     public void Move(int centerX, int centerY) {
-        if (angle >= 360) {
-            angle -= 360;
-        }
         angle++;
-        double radians = Math.toRadians(getAngle());
+        double radians = Math.toRadians(angle);
         x = (int)(centerX + distance * Math.cos(radians) - 15);
         y = (int)(centerY + distance * Math.sin(radians) - 15);
         for (Moon moon: moons) {
-            moon.setPlanetX(x);
-            moon.setPlanetY(y);
-            moon.Move();
+            moon.Move(x, y);
         }
     }
 }

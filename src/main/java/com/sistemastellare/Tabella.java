@@ -68,6 +68,10 @@ public class Tabella extends Frame {
         setVisible(true);
     }
 
+    /**
+     * Create the star by reading the data from the table
+     * @return Star
+     */
     public Star Creation() {
         int count = 0;
         Component[] components = p1.getComponents();
@@ -98,7 +102,7 @@ public class Tabella extends Frame {
                     int lune = selectedItem != null ? selectedItem : 0; /* se selectedItem è null, allora lune == 0 */
                     Moon[] moon = new Moon[lune];
                     for (int j = 0; j < lune; j++) {
-                        moon[j] = new Moon(Math.random() % 10, (int)(Math.random() * 360), centerx, centery);
+                        moon[j] = new Moon(Math.random() % 10, (int)(Math.random() * 360));
                     }
                     pianeti[count] = new Planet(moon, distanza, inclinazione, Math.random() * 3000, nome, centerx, centery);
                     count++;
@@ -106,7 +110,7 @@ public class Tabella extends Frame {
                 }
             }
         }
-        stella = new Star(pianeti, Math.random() * 30000);
+        stella = new Star(pianeti);
         dispose();
         return stella;
     }
