@@ -35,15 +35,16 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         startButton.setBounds(50, 50, 80, 30);
         startButton.addActionListener(this);
         add(startButton);
-        for (int i = 0; i < Stella.length; i++) {
-            if (Stella[i] != null) {
-                planetButtons[i] = new Button("Galassia " + (i + 1));
-                planetButtons[i].setBounds(50, 50 + 40 * (i + 1), 80, 30);
-                planetButtons[i].addActionListener(this);
-                add(planetButtons[i]);
+        if(Stella.length > 1) {
+            for (int i = 0; i < Stella.length; i++) {
+                if (Stella[i] != null) {
+                    planetButtons[i] = new Button("Galassia " + (i + 1));
+                    planetButtons[i].setBounds(50, 50 + 40 * (i + 1), 80, 30);
+                    planetButtons[i].addActionListener(this);
+                    add(planetButtons[i]);
+                }
             }
         }
-
         setVisible(true);
     }
 
