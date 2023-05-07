@@ -39,8 +39,7 @@ public class Selezione_galassie {
                 selected++;
                 rectangle.setX(rectangle.getX() + 500);
             }
-            default -> {
-            }
+            default -> {}
         }
     }
 
@@ -54,8 +53,7 @@ public class Selezione_galassie {
                 selected--;
                 rectangle.setX(rectangle.getX() - 500);
             }
-            default -> {
-            }
+            default -> {}
         }
     }
 

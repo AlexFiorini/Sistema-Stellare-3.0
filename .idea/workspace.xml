@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Aggiunta possibilità di cambiare galassia visualizzata">
+    <list default="true" id="63ce7de5-fb38-4422-9699-8ff29f394090" name="Changes" comment="Cambiato package sistema-solare -&gt; sistema-stellare">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Sistema_Stellare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/Tabella.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Moon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemasolare/objects/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Introduzione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Introduzione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Lancio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Lancio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Selezione_galassie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Selezione_galassie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Sistema_Stellare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Sistema_Stellare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Tabella.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/Tabella.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/GravityObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/GravityObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Moon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Moon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/OrbitalSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/OrbitalSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemastellare/objects/Star.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/sistemastellare/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/sistemastellare/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,18 +83,18 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Main" />
       <module name="Sistemasolare30" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Sistema_Solare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Sistema_Solare" />
+      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Sistema_Solare" />
       <module name="Sistemasolare30" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sistemasolare.*" />
+          <option name="PATTERN" value="com.sistemastellare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,11 +103,11 @@
       </method>
     </configuration>
     <configuration name="Sistema_Stellare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Sistema_Stellare" />
+      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Sistema_Stellare" />
       <module name="Sistemasolare30" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sistemasolare.*" />
+          <option name="PATTERN" value="com.sistemastellare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +116,11 @@
       </method>
     </configuration>
     <configuration name="Tabella" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sistemasolare.Tabella" />
+      <option name="MAIN_CLASS_NAME" value="com.sistemastellare.Tabella" />
       <module name="Sistemasolare30" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sistemasolare.*" />
+          <option name="PATTERN" value="com.sistemastellare.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -291,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683461423111</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Cambiato package sistema-solare -&gt; sistema-stellare">
+      <created>1683464554600</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1683464554600</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,7 +340,8 @@
     <MESSAGE value="Aggiunto salvataggio informazioni inserite nella tabella" />
     <MESSAGE value="Aggiunto movimento pianeti e lune, aggiunta possibilità di cambiare galassia" />
     <MESSAGE value="Aggiunta possibilità di cambiare galassia visualizzata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta possibilità di cambiare galassia visualizzata" />
+    <MESSAGE value="Cambiato package sistema-solare -&gt; sistema-stellare" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiato package sistema-solare -&gt; sistema-stellare" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

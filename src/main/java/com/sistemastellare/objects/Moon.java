@@ -9,8 +9,8 @@ public class Moon {
     public Moon(double distance, int angle, int planetx, int planety) {
         this.distance = distance;
         this.angle = angle;
-        this.x = (int) (distance * Math.cos(angle));
-        this.y = (int) (distance * Math.sin(angle));
+        this.x = (int)(distance * Math.cos(angle));
+        this.y = (int)(distance * Math.sin(angle));
         this.planetx = planetx;
         this.planety = planety;
     }
@@ -36,12 +36,12 @@ public class Moon {
     }
 
     public void Move() {
-        if(angle >= 360) {
+        if (angle >= 360) {
             angle -= 360;
         }
         angle++;
         double radians = Math.toRadians(getAngle());
-        x = (int) (planetx + distance * Math.cos(radians));
-        y = (int) (planety + distance * Math.sin(radians));
+        x = (int)(planetx + distance * Math.cos(radians));
+        y = (int)(planety + distance * Math.sin(radians));
     }
 }

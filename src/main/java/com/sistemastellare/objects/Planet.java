@@ -23,8 +23,8 @@ public class Planet {
         this.angle = angle;
         this.mass = mass;
         this.Name = Name;
-        this.x = (int) (centerx + distance * Math.cos(angle));
-        this.y = (int) (centery + distance * Math.sin(angle));
+        this.x = (int)(centerx + distance * Math.cos(angle));
+        this.y = (int)(centery + distance * Math.sin(angle));
     }
 
     /**
@@ -84,14 +84,14 @@ public class Planet {
     }
 
     public void Move(int centerX, int centerY) {
-        if(angle >= 360) {
+        if (angle >= 360) {
             angle -= 360;
         }
         angle++;
         double radians = Math.toRadians(getAngle());
-        x = (int) (centerX + distance * Math.cos(radians) - 15);
-        y = (int) (centerY + distance * Math.sin(radians) - 15);
-        for(Moon moon : moons) {
+        x = (int)(centerX + distance * Math.cos(radians) - 15);
+        y = (int)(centerY + distance * Math.sin(radians) - 15);
+        for (Moon moon: moons) {
             moon.setPlanetX(x);
             moon.setPlanetY(y);
             moon.Move();

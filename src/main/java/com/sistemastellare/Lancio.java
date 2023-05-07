@@ -10,7 +10,7 @@ public class Lancio {
         this.stage = stage;
     }
 
-    public void Takeoff(){
+    public void Takeoff() {
         String foto = "https://shorturl.at/fgI06";
         stage.getScene().getRoot().setStyle("-fx-background-image: url('" + foto + "');");
     }

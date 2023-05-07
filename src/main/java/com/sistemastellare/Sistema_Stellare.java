@@ -35,11 +35,11 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         startButton.setBounds(50, 50, 80, 30);
         startButton.addActionListener(this);
         add(startButton);
-        for(int i = 0; i < Stella.length; i++) {
-            if(Stella[i] != null) {
+        for (int i = 0; i < Stella.length; i++) {
+            if (Stella[i] != null) {
                 System.out.println(i);
                 planetButtons[i] = new Button("Galassia " + (i + 1));
-                planetButtons[i].setBounds(50, 50 + 40 * (i+1), 80, 30);
+                planetButtons[i].setBounds(50, 50 + 40 * (i + 1), 80, 30);
                 planetButtons[i].addActionListener(this);
                 add(planetButtons[i]);
             }
@@ -51,11 +51,11 @@ public class Sistema_Stellare extends Frame implements ActionListener {
     public void paint(Graphics g) {
         g.setColor(Color.YELLOW);
         int dim = 20;
-        g.fillOval(this.getWidth()/2 - (dim+10)/2, this.getHeight()/2 - (dim+10)/2, dim+10, dim+10);
-        for(Planet p : Stella[index].getPlanets()) {
+        g.fillOval(this.getWidth() / 2 - (dim + 10) / 2, this.getHeight() / 2 - (dim + 10) / 2, dim + 10, dim + 10);
+        for (Planet p: Stella[index].getPlanets()) {
             g.setColor(p.getColor());
             g.fillOval(p.getX(), p.getY(), dim, dim);
-            for(Moon m : p.getMoons()) {
+            for (Moon m: p.getMoons()) {
                 g.setColor(Color.WHITE);
                 g.fillOval(m.getX(), m.getY(), 10, 10);
             }
@@ -65,7 +65,7 @@ public class Sistema_Stellare extends Frame implements ActionListener {
 
     @SuppressWarnings("BusyWait")
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == planetButtons[0]) {
+        if (e.getSource() == planetButtons[0]) {
             index = 0;
         } else if (e.getSource() == planetButtons[1]) {
             index = 1;
@@ -82,7 +82,7 @@ public class Sistema_Stellare extends Frame implements ActionListener {
                 startButton.setLabel("Stop");
                 Thread t = new Thread(() -> {
                     while (isRunning) {
-                        for(Planet p : Stella[index].getPlanets()) {
+                        for (Planet p: Stella[index].getPlanets()) {
                             p.Move(centerX, centerY);
                         }
                         repaint();

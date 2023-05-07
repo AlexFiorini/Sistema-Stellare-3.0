@@ -36,7 +36,7 @@ public class Main extends Application {
         stage.show();
 
         stage.getScene().setOnKeyPressed(event -> {
-            if(event.getCode().toString().equals("ESCAPE"))
+            if (event.getCode().toString().equals("ESCAPE"))
                 stage.close();
             else {
                 switch (pressed) {
@@ -67,21 +67,21 @@ public class Main extends Application {
                         }
                     }
                     case 3 -> {
-                        if(first) {
+                        if (first) {
                             stage.close();
                             stelle = new Star[selected];
                             ss = new Sistema_Stellare[selected];
-                            for(int i = 0; i < selected; i++) {
+                            for (int i = 0; i < selected; i++) {
                                 int j = i;
                                 Tabella t = new Tabella(stella -> stelle[j] = stella);
-                                while(stelle[i] == null) {
+                                while (stelle[i] == null) {
                                     try {
                                         Thread.sleep(100);
                                     } catch (InterruptedException e) {
                                         throw new RuntimeException(e);
                                     }
                                 }
-                                if(stelle[i].getPlanets() == null) {
+                                if (stelle[i].getPlanets() == null) {
                                     i--;
                                     System.out.println("Error: No planets in star");
                                 }
@@ -90,8 +90,7 @@ public class Main extends Application {
                         }
                     }
 
-                    default -> {
-                    }
+                    default -> {}
                 }
 
             }
