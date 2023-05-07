@@ -16,7 +16,6 @@ public class Main extends Application {
     Selezione_galassie s;
     Star[] stelle;
     boolean first = true;
-    Sistema_Stellare[] ss;
 
     @SuppressWarnings("BusyWait")
     public void start(Stage stage) {
@@ -70,7 +69,6 @@ public class Main extends Application {
                         if (first) {
                             stage.close();
                             stelle = new Star[selected];
-                            ss = new Sistema_Stellare[selected];
                             for (int i = 0; i < selected; i++) {
                                 int j = i;
                                 new Tabella(stella -> stelle[j] = stella);
@@ -86,7 +84,7 @@ public class Main extends Application {
                                     System.out.println("Error: No planets in star");
                                 }
                             }
-                            ss[0] = new Sistema_Stellare(stelle, 0);
+                            new Sistema_Stellare(stelle, 0);
                         }
                     }
 
