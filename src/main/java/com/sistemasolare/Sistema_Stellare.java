@@ -1,18 +1,23 @@
 package com.sistemasolare;
 
+import com.sistemasolare.objects.Moon;
+import com.sistemasolare.objects.Planet;
 import com.sistemasolare.objects.Star;
 
 import java.awt.*;
 import java.awt.event.*;
 
 public class Sistema_Stellare extends Frame implements ActionListener {
-    private final Star Stella;
+    private final Star[] Stella;
+    private int index;
     private boolean isRunning = false;
     private final Button startButton = new Button("Start");
+    private final Button[] planetButtons = new Button[3];
 
-    Sistema_Stellare(Star Stella) {
+    Sistema_Stellare(Star[] Stella, int index) {
         super("Sistema Solare");
         this.Stella = Stella;
+        this.index = index;
         CreateFrame();
     }
 
@@ -30,6 +35,16 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         startButton.setBounds(50, 50, 80, 30);
         startButton.addActionListener(this);
         add(startButton);
+        for(int i = 0; i < Stella.length; i++) {
+            if(Stella[i] != null) {
+                System.out.println(i);
+                planetButtons[i] = new Button("Galassia " + (i + 1));
+                planetButtons[i].setBounds(50, 50 + 40 * (i+1), 80, 30);
+                planetButtons[i].addActionListener(this);
+                add(planetButtons[i]);
+            }
+        }
+
         setVisible(true);
     }
 
@@ -37,51 +52,49 @@ public class Sistema_Stellare extends Frame implements ActionListener {
         g.setColor(Color.YELLOW);
         int dim = 20;
         g.fillOval(this.getWidth()/2- dim /2, this.getHeight()/2- dim /2, dim, dim);
-        for(int i=0; i < Stella.getPlanets().length; i++) {
-            g.setColor(Stella.getPlanets()[i].getColor());
-            g.fillOval(Stella.getPlanets()[i].getX(), Stella.getPlanets()[i].getY(), dim, dim);
-            for(int j=0; j<Stella.getPlanets()[i].getMoons().length; j++) {
+        for(Planet p : Stella[index].getPlanets()) {
+            g.setColor(p.getColor());
+            g.fillOval(p.getX(), p.getY(), dim, dim);
+            for(Moon m : p.getMoons()) {
                 g.setColor(Color.WHITE);
-                g.fillOval(Stella.getPlanets()[i].getMoons()[j].getX(), Stella.getPlanets()[i].getMoons()[j].getY(), 10, 10);
+                g.fillOval(m.getX(), m.getY(), 10, 10);
             }
 
         }
     }
 
-
     @SuppressWarnings("BusyWait")
     public void actionPerformed(ActionEvent e) {
-        int centerX = getWidth() / 2;
-        int centerY = getHeight() / 2;
-        if (isRunning) {
-            isRunning = false;
-            startButton.setLabel("Start");
-        } else {
-            isRunning = true;
-            startButton.setLabel("Stop");
-            Thread t = new Thread(() -> {
-                while (isRunning) {
-                    for(int i=0; i < Stella.getPlanets().length; i++) {
-                        Stella.getPlanets()[i].Move(centerX, centerY);
+        if(e.getSource() == planetButtons[0]) {
+            index = 0;
+        } else if (e.getSource() == planetButtons[1]) {
+            index = 1;
+        } else if (e.getSource() == planetButtons[2]) {
+            index = 2;
+        } else if (e.getSource() == startButton) {
+            int centerX = getWidth() / 2;
+            int centerY = getHeight() / 2;
+            if (isRunning) {
+                isRunning = false;
+                startButton.setLabel("Start");
+            } else {
+                isRunning = true;
+                startButton.setLabel("Stop");
+                Thread t = new Thread(() -> {
+                    while (isRunning) {
+                        for(Planet p : Stella[index].getPlanets()) {
+                            p.Move(centerX, centerY);
+                        }
+                        repaint();
+                        try {
+                            Thread.sleep(50);
+                        } catch (InterruptedException f) {
+                            f.printStackTrace();
+                        }
                     }
-                    repaint();
-                   try {
-                        Thread.sleep(50);
-                    } catch (InterruptedException f) {
-                        f.printStackTrace();
-                    }
-                }
-            });
-            t.start();
+                });
+                t.start();
+            }
         }
-    }
-
-    public void Dispose() {
-        dispose();
-    }
-
-
-    public static void main(String[] args) {
-        new Sistema_Stellare(new Star());
     }
 }
